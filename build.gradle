@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'y58meng.bezier_curve'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+javafx {
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.media']
+    version = "11.0.2"
+}
+
+application {
+    mainClassName = 'y58meng.bezier_curve.board'
+}
